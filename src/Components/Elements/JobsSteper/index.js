@@ -46,7 +46,7 @@ export default function JobSteper() {
     <Timeline align="alternate">
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             06/2020 – Present
           </Typography>
         </TimelineOppositeContent>
@@ -67,7 +67,7 @@ export default function JobSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             01/2019 - 01/2020 
           </Typography>
         </TimelineOppositeContent>
@@ -88,7 +88,7 @@ export default function JobSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             02/2013 - 09/2018 
           </Typography>
         </TimelineOppositeContent>
@@ -109,7 +109,7 @@ export default function JobSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             09/2008 - 02/2013 
           </Typography>
         </TimelineOppositeContent>

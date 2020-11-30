@@ -5,10 +5,15 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import JobSteper from "../../Elements/JobsSteper"
 import EducationSteper from "../../Elements/EducationSteper"
+import AssignmentReturnedIcon from '@material-ui/icons/AssignmentReturned';
+import Tooltip from '@material-ui/core/Tooltip';
+import IconButton from '@material-ui/core/IconButton';
+import Box from "@material-ui/core/Box"
+import HomeIcon from '@material-ui/icons/Home';
 
 const useStyles = makeStyles((theme) =>({
   root: {
-    color: "#fff",    
+    color: "white",    
     background: "rgba(255,255,255,0.2)",
     borderRadius: "15px",
     width : "95vw",
@@ -27,7 +32,31 @@ const useStyles = makeStyles((theme) =>({
     minWidth: "100px",
     margin: "20px",
     //padding: '0 30px',
-  }
+  },
+  buttonsBox: {
+     
+    [theme.breakpoints.up('md')]: {           
+        top: "30%",
+        left : "90%",        
+        display:"flex",       
+        flexDirection:"column",
+        position: "fixed",
+            
+      },
+    
+},
+roundedButtons: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    border: 0,
+    borderRadius: 50,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
+    height: 55,
+    width: 55,
+    margin: "20px",
+    //padding: '0 30px',
+   
+},
 
 }))
 
@@ -81,6 +110,19 @@ export default function About() {
         <Grid xs={12} item >
             <EducationSteper/>
         </Grid>
+        <Box className={classes.buttonsBox}  >            
+            <Tooltip title="Home" aria-label="add" placement="left">
+                <IconButton className={classes.roundedButtons} href="/">
+                    <HomeIcon fontSize="large"/>
+                </IconButton>                      
+            </Tooltip> 
+            <Tooltip title="MY RESUME" aria-label="add" placement="left">
+                <IconButton className={classes.roundedButtons} onClick={()=>console.log("Resume clicked")}>
+                    <AssignmentReturnedIcon fontSize="large"/>
+                </IconButton>                      
+            </Tooltip> 
+            
+        </Box>
     </Grid>
   )
 }

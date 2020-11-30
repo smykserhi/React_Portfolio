@@ -57,7 +57,7 @@ export default function EducationSteper() {
     <Timeline align="alternate">
         <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             In Progress
           </Typography>
         </TimelineOppositeContent>
@@ -78,7 +78,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2020
           </Typography>
         </TimelineOppositeContent>
@@ -99,7 +99,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2020 
           </Typography>
         </TimelineOppositeContent>
@@ -120,7 +120,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2019 
           </Typography>
         </TimelineOppositeContent>
@@ -141,7 +141,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2019 
           </Typography>
         </TimelineOppositeContent>
@@ -162,7 +162,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2018 
           </Typography>
         </TimelineOppositeContent>
@@ -183,7 +183,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2017 
           </Typography>
         </TimelineOppositeContent>
@@ -204,7 +204,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2008 
           </Typography>
         </TimelineOppositeContent>
@@ -225,7 +225,7 @@ export default function EducationSteper() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
-          <Typography variant="subtitle1" color="#fff">
+          <Typography variant="subtitle1" color="inherit">
             2007 
           </Typography>
         </TimelineOppositeContent>

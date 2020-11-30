@@ -1,9 +1,7 @@
 import React from "react"
 import Typography from '@material-ui/core/Typography';
-import ReactTypingEffectText from "../../Elements/ReactTypingEffect"
 import ReactTypingEffect from 'react-typing-effect';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import FaceIcon from '@material-ui/icons/Face';
@@ -13,7 +11,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import MailOutlineRoundedIcon from '@material-ui/icons/MailOutlineRounded';
 import IconButton from '@material-ui/core/IconButton';
 import Box from "@material-ui/core/Box"
-import { Redirect} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -85,7 +82,7 @@ export default function Home() {
                         I'm Serhii Smyk
                     </Typography>
                     <Typography variant="h3" component="h3">
-                        <ReactTypingEffect
+                        <ReactTypingEffect speed={150}
                             text={["Front End Developer.", "Software Engineer"]}
                         />
                     </Typography>
@@ -95,22 +92,22 @@ export default function Home() {
             <Grid item sm={4} xs={12}/>           
         </Grid>
         <Box className={classes.buttonsBox}  >
-            <Tooltip title="ABOUT ME" aria-label="add" placement="right">
+            <Tooltip title="ABOUT ME" aria-label="add" placement="left">
                 <IconButton className={classes.roundedButtons} href="/about" >
                     <FaceIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip> 
-            <Tooltip title="MY PROJECTS" aria-label="add" placement="right">
+            <Tooltip title="MY PROJECTS" aria-label="add" placement="left">
                 <IconButton className={classes.roundedButtons} href="/projects">
                     <CodeIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip> 
-            <Tooltip title="MY RESUME" aria-label="add" placement="right">
+            <Tooltip title="MY RESUME" aria-label="add" placement="left">
                 <IconButton className={classes.roundedButtons} onClick={()=>console.log("Resume clicked")}>
                     <AssignmentReturnedIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip> 
-            <Tooltip title="CONTACT ME" aria-label="add" placement="right">
+            <Tooltip title="CONTACT ME" aria-label="add" placement="left">
                 <IconButton className={classes.roundedButtons} href="/contact">
                     <MailOutlineRoundedIcon fontSize="large"/>
                 </IconButton>                      

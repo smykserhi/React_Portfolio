@@ -82,11 +82,11 @@ function Sidebar(props) {
   };
 
   const drawer = (
-    <div>
-        <div className={classes.toolbar} />
+    <>
+        {/* <div className={classes.toolbar} /> */}
         {/* <Divider /> */}
         <List> 
-            <Divider/>       
+            {/* <Divider/>        */}
             <ListItem >
                 <Tooltip title="HOME" aria-label="add" placement="right">
                     <IconButton href="/">
@@ -126,10 +126,9 @@ function Sidebar(props) {
                     </IconButton> 
                 </Tooltip>
             </ListItem>
-            <Divider/>
-        
+            <Divider/>        
       </List>      
-    </div>
+    </>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
@@ -154,8 +153,7 @@ function Sidebar(props) {
                 Serhii Smyk
             </Typography>
             <SettingsEthernetIcon className={classes.barSing} fontSize="large"/>
-          </Grid>
-          
+          </Grid>          
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
@@ -166,28 +164,13 @@ function Sidebar(props) {
             variant="temporary"
             anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={mobileOpen}
-            onClose={handleDrawerToggle}
-            classes={{
-              //paper: classes.drawerPaper,
-            }}
+            onClose={handleDrawerToggle}            
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
             }}
           >
             {drawer}
           </Drawer>
-        {/* </Hidden> */}
-        {/* <Hidden xsDown implementation="css">
-          <Drawer
-            classes={{
-              //paper: classes.drawerPaper,
-            }}
-            variant="permanent"
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Hidden> */}
       </nav>
       
     </div>
