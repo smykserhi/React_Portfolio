@@ -30,8 +30,6 @@ const useStyles = makeStyles((theme) => ({
         height: 55,
         width: 55,
         margin: "20px",
-        //padding: '0 30px',
-       
     },
     buttonsBox: {
         position: "absolute",
@@ -44,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
             left : "90%",            
             flexDirection:"column",
           },
-        
     }
 
 }));
@@ -87,7 +84,6 @@ export default function Home() {
                         />
                     </Typography>
                 </ThemeProvider>
-               
             </Grid>
             <Grid item sm={4} xs={12}/>           
         </Grid>
@@ -103,7 +99,7 @@ export default function Home() {
                 </IconButton>                      
             </Tooltip> 
             <Tooltip title="MY RESUME" aria-label="add" placement="left">
-                <IconButton className={classes.roundedButtons} onClick={()=>console.log("Resume clicked")}>
+                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.docx">
                     <AssignmentReturnedIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip> 
@@ -113,11 +109,8 @@ export default function Home() {
                 </IconButton>                      
             </Tooltip> 
         </Box>
-        
-        
     </div>
     )
-
 }
 
 

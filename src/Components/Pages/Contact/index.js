@@ -13,19 +13,16 @@ import Box from "@material-ui/core/Box"
 import HomeIcon from '@material-ui/icons/Home';
 
 const useStyles = makeStyles((theme) =>({
- 
-    root: {
-      flexGrow: 1,
-      width : "95vw",
-      background: "rgba(255,255,255,0.4)",
-      borderRadius: "15px",
-      color:"#fff",
-      
-      margin: "20vh auto",
-      [theme.breakpoints.up('md')]: {           
+   root: {
+    flexGrow: 1,
+    width : "95vw",
+    background: "rgba(255,255,255,0.4)",
+    borderRadius: "15px",
+    color:"#fff",
+    margin: "20vh auto",
+  [theme.breakpoints.up('md')]: {           
           width: "60vw"
-        },
-  
+    },  
   },
   button: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -41,7 +38,6 @@ const useStyles = makeStyles((theme) =>({
     color:"#fff",
     backgroundColor: "rgba(255,255,255,0.5)",
     borderRadius: 5,
-
   },
   buttonsBox: {     
     [theme.breakpoints.up('md')]: {           
@@ -52,17 +48,15 @@ const useStyles = makeStyles((theme) =>({
         position: "fixed",            
       },    
     },
-    roundedButtons: {
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-        border: 0,
-        borderRadius: 50,
-        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-        color: 'white',
-        height: 55,
-        width: 55,
-        margin: "20px",
-        //padding: '0 30px',
-    
+  roundedButtons: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    border: 0,
+    borderRadius: 50,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
+    height: 55,
+    width: 55,
+    margin: "20px",
     },
 }));
 
@@ -74,8 +68,6 @@ export default function Contact() {
   const [alert, setAlert] = useState(false)
   const [er, setEr] = useState(false)
   const [erMessage, setErMessage] = useState("")
-  
-
   const onChange = (e)=>{
     if(e.target.id === "name" ) setName(e.target.value)
     else if (e.target.id === "email") setEmail(e.target.value)
@@ -84,8 +76,6 @@ export default function Contact() {
 
   const onSend =(e)=>{
     const apiKey = process.env.REACT_APP_API 
-    
-    //console.log(process.env)
     fetch('https://api.airtable.com/v0/app8ZAX7h2saMhNWq/responce', {
       method: "POST",
       body: JSON.stringify({
@@ -174,14 +164,12 @@ export default function Contact() {
               value={message}
                id="message"
               label="Message"
-              //defaultValue="Hello World"
               variant="filled"
             />
         </Grid>
         <Grid item md={8} xs={11}>
           <Button disabled={validation} fullWidth={true} onClick={onSend} className={classes.button}>Send</Button>
-        </Grid>     
-       
+        </Grid>  
       </Grid>
       <Snackbar open={alert} autoHideDuration={3000} onClose={handleCloseAlert} >
         <MuiAlert elevation={6} variant="filled"  severity="success" onClose={handleCloseAlert}>
@@ -200,11 +188,10 @@ export default function Contact() {
                 </IconButton>                      
             </Tooltip> 
             <Tooltip title="MY RESUME" aria-label="add" placement="left">
-                <IconButton className={classes.roundedButtons} onClick={()=>console.log("Resume clicked")}>
+                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.docx">
                     <AssignmentReturnedIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip> 
-            
         </Box>     
     </div>
   )

@@ -31,32 +31,26 @@ const useStyles = makeStyles((theme) =>({
     height: 55,
     minWidth: "100px",
     margin: "20px",
-    //padding: '0 30px',
   },
-  buttonsBox: {
-     
+  buttonsBox: {     
     [theme.breakpoints.up('md')]: {           
         top: "30%",
         left : "90%",        
         display:"flex",       
         flexDirection:"column",
-        position: "fixed",
-            
-      },
-    
-},
-roundedButtons: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    border: 0,
-    borderRadius: 50,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
-    height: 55,
-    width: 55,
-    margin: "20px",
-    //padding: '0 30px',
-   
-},
+        position: "fixed",            
+      },    
+    },
+    roundedButtons: {
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        border: 0,
+        borderRadius: 50,
+        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+        color: 'white',
+        height: 55,
+        width: 55,
+        margin: "20px",
+    },
 
 }))
 
@@ -64,12 +58,7 @@ export default function About() {
   const classes = useStyles();
   const skills = ["React", "JavaScript", "Node.js", "CSS3", "HTML5", "SQL", "Firebase", "Airtable", "Java", "C/C++", "Material UI", "BootStrap", "Express", "Pug", "Selenium", "Postman", "JMeter"]
   return (
-    <Grid className={classes.root} container direction="row" justify="center" alignItems="center" spacing={4} >
-        {/* <Grid xs={12} item >
-            <Typography color="inherit" variant="h2" component="h2">
-                Serhii Smyk
-            </Typography>
-        </Grid>        */}
+    <Grid className={classes.root} container direction="row" justify="center" alignItems="center" spacing={4} >                
         <Grid xs={12} item >
             <Typography color="inherit" variant="h4" component="h4">
                 Professionl Summary
@@ -117,11 +106,10 @@ export default function About() {
                 </IconButton>                      
             </Tooltip> 
             <Tooltip title="MY RESUME" aria-label="add" placement="left">
-                <IconButton className={classes.roundedButtons} onClick={()=>console.log("Resume clicked")}>
+                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.docx">
                     <AssignmentReturnedIcon fontSize="large"/>
                 </IconButton>                      
-            </Tooltip> 
-            
+            </Tooltip>             
         </Box>
     </Grid>
   )

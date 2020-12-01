@@ -9,11 +9,6 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import CodeIcon from '@material-ui/icons/Code';
-import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
-import AutorenewIcon from '@material-ui/icons/Autorenew';
-import BugReportIcon from '@material-ui/icons/BugReport';
-import ReactIcon from "../../../static/favicon.ico"
 import { FaReact } from 'react-icons/fa';
 import { DiJavascript1} from 'react-icons/di';
 import { VscBug} from 'react-icons/all';
@@ -22,8 +17,6 @@ import { DiJava} from 'react-icons/all';
 import { SiCplusplus} from 'react-icons/all';
 import { AiFillMediumCircle} from 'react-icons/all';
 import { DiBootstrap} from 'react-icons/all';
-
-
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -35,14 +28,12 @@ const useStyles = makeStyles((theme) => ({
   elemnts: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     border: 0,
-    //borderRadius: 50,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     color: 'white',
     height: 55,
     width: 55,
     alignItems: "center",
     justifyContent: "center",
-    //margin: "20px",
   },
   dates:{
       margin: "15px 0 0 0"
