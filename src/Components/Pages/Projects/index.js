@@ -82,7 +82,7 @@ export default function Projects(){
         }
     })
     const createProjects =(data)=>{
-        console.log("Projects",data.records)
+        //console.log("Projects",data.records)
         let project = []
         data.records.map(el=>{
             let projectElement = {
@@ -91,11 +91,12 @@ export default function Projects(){
                 pageUrl: el.fields.Link,
                 imgUrl: el.fields.Image[0].url&&el.fields.Image[0].url,
                 title: el.fields.Title,
-                gitUrl: el.fields.gitUrl
+                gitUrl: el.fields.gitUrl,
+                position: el.fields.position
             }
-            project.push(projectElement)
+            project.push(projectElement) 
         })        
-        setProjects(project.reverse())
+        setProjects(project.sort((a, b) => (a.position > b.position) ? 1 : -1))
         setLoading(false)  
     }
     return (
