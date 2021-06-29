@@ -14,7 +14,7 @@ import HomeIcon from '@material-ui/icons/Home';
 const useStyles = makeStyles((theme) =>({
   root: {
     color: "white",    
-    background: "rgba(255,255,255,0.2)",
+    background: "rgba(137,140,145,0.95)",
     borderRadius: "15px",
     width : "95vw",
     margin: "10vh auto",
@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) =>({
     height: 55,
     minWidth: "100px",
     margin: "20px",
+    cursor: "default"
   },
   buttonsBox: {     
     [theme.breakpoints.up('md')]: {           
@@ -56,12 +57,12 @@ const useStyles = makeStyles((theme) =>({
 
 export default function About() {
   const classes = useStyles();
-  const skills = ["React", "JavaScript", "Node.js", "CSS3", "HTML5", "SQL", "Firebase", "Airtable", "Java", "C/C++", "Material UI", "BootStrap", "Express", "Pug", "Selenium", "Postman", "JMeter"]
+  const skills = ["React", "TypeScript", "JavaScript", "Node.js", "CSS3", "HTML5", "SQL", "Firebase", "Airtable", "Java", "C/C++", "Material UI","Meridian Ui", "BootStrap", "Express", "Selenium", "Postman", "JMeter"]
   return (
     <Grid className={classes.root} container direction="row" justify="center" alignItems="center" spacing={4} >                
         <Grid xs={12} item >
             <Typography color="inherit" variant="h4" component="h4">
-                Professionl Summary
+                Professional Summary
             </Typography>
         </Grid>
         <Grid xs={12} md={8} item >
@@ -79,7 +80,9 @@ export default function About() {
         <Grid xs={12} item >
             {skills.map((el,index)=>{
                 return(
-                    <Button key={index} className={classes.skills}>{el}</Button>
+                    <Button key={index} className={classes.skills}>                    
+                        {el} 
+                    </Button>
                 )
             })}
         </Grid>
@@ -106,7 +109,7 @@ export default function About() {
                 </IconButton>                      
             </Tooltip> 
             <Tooltip title="MY RESUME" aria-label="add" placement="left">
-                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.docx">
+                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.pdf">
                     <AssignmentReturnedIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip>             

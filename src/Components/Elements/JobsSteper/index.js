@@ -13,14 +13,16 @@ import CodeIcon from '@material-ui/icons/Code';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import AutorenewIcon from '@material-ui/icons/Autorenew';
 import BugReportIcon from '@material-ui/icons/BugReport';
+import CompareIcon from '@material-ui/icons/Compare';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    padding: '6px 16px',    
-    alignItems:"center",
+    padding: '6px 16px',
+    alignItems: "center",
     justifyContent: "center"
   },
-  
+
   elemnts: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     border: 0,
@@ -31,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
   },
-  dates:{
-      margin: "15px 0 0 0"
+  dates: {
+    margin: "15px 0 0 0"
   }
 
 }));
@@ -44,7 +46,7 @@ export default function JobSteper() {
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
           <Typography variant="subtitle1" color="inherit">
-            06/2020 – Present
+            05/2021 – present
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -56,7 +58,28 @@ export default function JobSteper() {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography align="center" variant="h6" component="h1">
-                Front-End Developer, Internship and Training
+              Front-End Developer(React)
+            </Typography>
+            <Typography align="center">Cognizant(Amazon), Sacramento, CA </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className={classes.dates}>
+          <Typography variant="subtitle1" color="inherit">
+            06/2020 – 05/2021
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot className={classes.elemnts} >
+            <EmojiObjectsIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography align="center" variant="h6" component="h1">
+              Front-End Developer
             </Typography>
             <Typography align="center">Code the Dream,  Durham, NC </Typography>
           </Paper>
@@ -65,7 +88,28 @@ export default function JobSteper() {
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
           <Typography variant="subtitle1" color="inherit">
-            01/2019 - 01/2020 
+            01/2019 - 01/2020
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot className={classes.elemnts}>
+            <CompareIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography align="center" variant="h6" component="h1">
+              Software Engineer in Test
+            </Typography>
+            <Typography align="center">CHI Software, Sacramento, CA</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent className={classes.dates}>
+          <Typography variant="subtitle1" color="inherit">
+            07/2016 - 01/2019
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -77,28 +121,28 @@ export default function JobSteper() {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography align="center" variant="h6" component="h1">
-                QA Automation Engineer	
+              Software Developer
             </Typography>
-            <Typography align="center">CHI Software, Sacramento, CA</Typography>
+            <Typography align="center">CHI Software, Kharkiv, UA</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
           <Typography variant="subtitle1" color="inherit">
-            02/2013 - 09/2018 
+            02/2013 - 07/2016
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot className={classes.elemnts}>
-            <AutorenewIcon fontSize="large"/>
+            <AutorenewIcon fontSize="large" />
           </TimelineDot>
-          <TimelineConnector  />
+          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography align="center" variant="h6" component="h1">
-                Head of Customs Broker Department	
+              Head of Customs Broker Department
             </Typography>
             <Typography align="center">Ferrytransservis LLC, Chernomorsk, Ukraine</Typography>
           </Paper>
@@ -107,18 +151,18 @@ export default function JobSteper() {
       <TimelineItem>
         <TimelineOppositeContent className={classes.dates}>
           <Typography variant="subtitle1" color="inherit">
-            09/2008 - 02/2013 
+            09/2008 - 02/2013
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot className={classes.elemnts}>
-            <AssignmentTurnedInIcon fontSize="large"/>
+            <AssignmentTurnedInIcon fontSize="large" />
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography align="center" variant="h6" component="h1">
-                Customs Broker	
+              Customs Broker
             </Typography>
             <Typography align="center" >EATC-Ukraine LLC, Chernomorsk, Ukraine</Typography>
           </Paper>

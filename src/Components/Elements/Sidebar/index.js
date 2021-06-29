@@ -104,7 +104,7 @@ function Sidebar(props) {
             <Divider/> 
              <ListItem >
                 <Tooltip title="MY RESUME" aria-label="add" placement="right">
-                    <IconButton href="/static/Serhii_Smyk_Resume.docx">
+                    <IconButton href="/static/Serhii_Smyk_Resume.pdf">
                         <AssignmentReturnedIcon fontSize="large"/>
                     </IconButton>  
                 </Tooltip>     

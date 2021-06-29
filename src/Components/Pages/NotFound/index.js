@@ -70,7 +70,7 @@ export default function NotFound() {
           </IconButton>                      
         </Tooltip> 
         <Tooltip title="MY RESUME" aria-label="add" placement="left">
-          <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.docx">
+          <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.pdf">
             <AssignmentReturnedIcon fontSize="large"/>
           </IconButton>                      
         </Tooltip>             

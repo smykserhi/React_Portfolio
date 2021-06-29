@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) =>({
    root: {
     flexGrow: 1,
     width : "95vw",
-    background: "rgba(255,255,255,0.4)",
+    background: "rgba(137,140,145,0.95)",
     borderRadius: "15px",
     color:"#fff",
     margin: "20vh auto",
@@ -188,7 +188,7 @@ export default function Contact() {
                 </IconButton>                      
             </Tooltip> 
             <Tooltip title="MY RESUME" aria-label="add" placement="left">
-                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.docx">
+                <IconButton className={classes.roundedButtons} href="/static/Serhii_Smyk_Resume.pdf">
                     <AssignmentReturnedIcon fontSize="large"/>
                 </IconButton>                      
             </Tooltip> 
